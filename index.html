@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TourKZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    header {
+      background: #009688;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      font-size: 20px;
+    }
+    .card {
+      background: white;
+      margin: 12px;
+      padding: 16px;
+      border-radius: 12px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .btn {
+      margin-top: 10px;
+      background: #009688;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>🌍 TourKZ</header>
+
+  <div class="card">
+    <div class="title">Чарынский каньон</div>
+    <p>📍 Алматинская область</p>
+    <p>💸 Бюджет: 20 000 ₸</p>
+    <button class="btn">Сохранить маршрут</button>
+  </div>
+
+  <div class="card">
+    <div class="title">Озеро Кольсай</div>
+    <p>📍 Алматинская область</p>
+    <p>💸 Бюджет: 30 000 ₸</p>
+    <button class="btn">Сохранить маршрут</button>
+  </div>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+  </script>
+</body>
+</html>
